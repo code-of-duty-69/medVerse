@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:medverse_app/HomeWidgetList.dart';
+import 'package:medverse_app/Reminderpage.dart';
+import 'package:medverse_app/Scanpage.dart';
 import 'Chatbotpage.dart';
+import 'Appointmentpage.dart';
 
 class Navbar extends StatelessWidget {
   const Navbar({super.key});
@@ -15,7 +17,7 @@ class Navbar extends StatelessWidget {
             accountName: Text("placeholder"),
             accountEmail: Text("placeholder@gmail.com"),
             decoration: BoxDecoration(
-                color: Color(000),
+                color: Color(0x00000000),
                 image: DecorationImage(
                     image: AssetImage('images/DrawerHeader.jpg'),
                     fit: BoxFit.cover)),
@@ -23,15 +25,10 @@ class Navbar extends StatelessWidget {
           ListTile(
             leading: const Icon(Icons.account_circle),
             title: const Text("Profile"),
-            onTap: () {},
-          ),
-          ListTile(
-            leading: const Icon(Icons.home),
-            title: const Text("Home"),
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => HomeWidgetList()),
+                MaterialPageRoute(builder: (context) => Chatbotpage()),
               );
             },
           ),
@@ -48,28 +45,54 @@ class Navbar extends StatelessWidget {
           ListTile(
             leading: const Icon(Icons.book_rounded),
             title: const Text("Appointments"),
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const Appointmentpage()),
+              );
+            },
           ),
           ListTile(
             leading: const Icon(Icons.calendar_month),
             title: const Text("Reminders"),
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const Reminderpage()),
+              );
+            },
           ),
           ListTile(
-            leading: const Icon(Icons.phone),
-            title: const Text("Contact us"),
-            onTap: () {},
+            leading: const Icon(Icons.camera_alt_outlined),
+            title: const Text("Scan Prescription"),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const Scanpage()),
+              );
+            },
           ),
-          Divider(),
+          const Divider(),
           ListTile(
             leading: const Icon(Icons.settings),
             title: const Text("Settings"),
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Chatbotpage()),
+              );
+            },
           ),
           ListTile(
             leading: const Icon(Icons.logout),
             title: const Text("Sign out"),
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Chatbotpage()),
+              );
+            },
           ),
         ],
       ),

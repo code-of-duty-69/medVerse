@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 
 class HomeWidgetList extends StatefulWidget {
+  const HomeWidgetList({super.key});
+
   @override
   _ScrollableWidgetListState createState() => _ScrollableWidgetListState();
 }
 
 class _ScrollableWidgetListState extends State<HomeWidgetList> {
   // Keep track of which widgets are expanded
-  List<bool> _isExpanded = [
+  final List<bool> _isExpanded = [
+    false,
     false,
     false,
     false,
@@ -18,7 +21,7 @@ class _ScrollableWidgetListState extends State<HomeWidgetList> {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Column(
-        children: List.generate(4, (index) => _buildExpandableWidget(index)),
+        children: List.generate(5, (index) => _buildExpandableWidget(index)),
       ),
     );
   }
@@ -40,15 +43,14 @@ class _ScrollableWidgetListState extends State<HomeWidgetList> {
             height: 145,
             decoration: const BoxDecoration(
               border: Border(
-                bottom: BorderSide(
-                    width: 1.0, color: Colors.black), // Underlined text
+                bottom: BorderSide(width: 1.0, color: Colors.black),
               ),
             ),
             child: Text(
               'Hospital ${index + 1}',
               style: const TextStyle(
                 fontSize: 18.0,
-                decoration: TextDecoration.underline, // Underline the text
+                decoration: TextDecoration.underline,
               ),
             ),
           ),

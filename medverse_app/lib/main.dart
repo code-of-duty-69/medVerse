@@ -3,10 +3,12 @@ import 'Navbar.dart';
 import 'HomeWidgetList.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -17,8 +19,8 @@ class MyApp extends StatelessWidget {
           title: const Text('MEDVERSE'),
           backgroundColor: const Color.fromARGB(255, 43, 147, 231),
         ),
-        body: HomeWidgetList(),
-        drawer: Navbar(),
+        body: const HomeWidgetList(),
+        drawer: const Navbar(),
       ),
     );
   }
