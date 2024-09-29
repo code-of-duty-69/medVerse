@@ -16,8 +16,16 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('MEDVERSE'),
-          backgroundColor: const Color.fromARGB(255, 43, 147, 231),
+          title: Image.asset(
+            'images/logo.jpg',
+            height: 96,
+            width: 150,
+          ),
+          toolbarHeight: 110.0,
+          backgroundColor: const Color.fromARGB(255, 35, 170, 233),
+          iconTheme: const IconThemeData(
+            color: Colors.white,
+          ),
         ),
         body: const HomeWidgetList(),
         drawer: const Navbar(),

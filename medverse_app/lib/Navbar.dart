@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:medverse_app/Reminderpage.dart';
-import 'package:medverse_app/Scanpage.dart';
+import 'Scanpage.dart';
 import 'Chatbotpage.dart';
 import 'Appointmentpage.dart';
 
@@ -34,7 +34,7 @@ class Navbar extends StatelessWidget {
           ),
           ListTile(
             leading: const Icon(Icons.message_rounded),
-            title: const Text("Chatbot"),
+            title: const Text("Medbot"),
             onTap: () {
               Navigator.push(
                 context,
@@ -44,7 +44,7 @@ class Navbar extends StatelessWidget {
           ),
           ListTile(
             leading: const Icon(Icons.book_rounded),
-            title: const Text("Appointments"),
+            title: const Text("Book Appointment"),
             onTap: () {
               Navigator.push(
                 context,
@@ -55,7 +55,7 @@ class Navbar extends StatelessWidget {
           ),
           ListTile(
             leading: const Icon(Icons.calendar_month),
-            title: const Text("Reminders"),
+            title: const Text("Heads-up"),
             onTap: () {
               Navigator.push(
                 context,
@@ -69,7 +69,7 @@ class Navbar extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const Scanpage()),
+                MaterialPageRoute(builder: (context) => const ScanPage()),
               );
             },
           ),
