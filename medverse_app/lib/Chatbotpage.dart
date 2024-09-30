@@ -77,7 +77,7 @@ class _ChatbotPageState extends State<ChatbotPage> {
               padding: const EdgeInsets.all(16.0),
               alignment: Alignment.center,
               child: const Text(
-                "How can I help you?",
+                "AI Health Assistant",
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
@@ -85,6 +85,7 @@ class _ChatbotPageState extends State<ChatbotPage> {
                 ),
               ),
             ),
+            const Divider(),
             Expanded(
               child: ListView.builder(
                 controller: _scrollController,
@@ -92,7 +93,6 @@ class _ChatbotPageState extends State<ChatbotPage> {
                 itemBuilder: (context, index) => _messages[index],
               ),
             ),
-            const Divider(height: 1.0),
             _buildTextComposer(),
           ],
         ),
@@ -104,7 +104,7 @@ class _ChatbotPageState extends State<ChatbotPage> {
     return Container(
       margin: const EdgeInsets.all(8.0),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: const Color.fromARGB(255, 114, 133, 148),
         borderRadius: BorderRadius.circular(20.0),
       ),
       child: Row(
@@ -127,7 +127,7 @@ class _ChatbotPageState extends State<ChatbotPage> {
           ),
           Container(
             margin: const EdgeInsets.symmetric(horizontal: 4.0),
-            child: IconButton(
+            child: IconButton.filled(
               icon: const Icon(Icons.send),
               onPressed: () => _handleSubmitted(_textController.text),
             ),

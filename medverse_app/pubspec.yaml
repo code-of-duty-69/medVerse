@@ -60,6 +60,11 @@ flutter:
   assets:
     - images/DrawerHeader.jpg
     - images/logo.jpg
+    - images/doc1.png
+    - images/doc2.png
+    - images/doc3.png
+    - images/doc4.png
+    - images/doc5.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

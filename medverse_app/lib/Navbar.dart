@@ -44,7 +44,7 @@ class Navbar extends StatelessWidget {
           ),
           ListTile(
             leading: const Icon(Icons.book_rounded),
-            title: const Text("Book Appointment"),
+            title: const Text("Appointments"),
             onTap: () {
               Navigator.push(
                 context,
