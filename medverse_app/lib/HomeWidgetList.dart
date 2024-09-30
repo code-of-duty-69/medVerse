@@ -58,7 +58,7 @@ class _ScrollableWidgetListState extends State<HomeWidgetList> {
         // Dropdown content that will appear when the widget is clicked
         AnimatedContainer(
           duration: const Duration(milliseconds: 300),
-          height: _isExpanded[index] ? 250.0 : 0.0, // Dropdown height
+          height: _isExpanded[index] ? 1250.0 : 0.0, // Dropdown height
           child: _isExpanded[index]
               ? Container(
                   color: const Color.fromARGB(255, 209, 233, 253),
