@@ -28,7 +28,7 @@ class Navbar extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => Chatbotpage()),
+                MaterialPageRoute(builder: (context) => const Chatbotpage()),
               );
             },
           ),
@@ -38,7 +38,7 @@ class Navbar extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => Chatbotpage()),
+                MaterialPageRoute(builder: (context) => const Chatbotpage()),
               );
             },
           ),
@@ -80,7 +80,7 @@ class Navbar extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => Chatbotpage()),
+                MaterialPageRoute(builder: (context) => const Chatbotpage()),
               );
             },
           ),
@@ -90,7 +90,7 @@ class Navbar extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => Chatbotpage()),
+                MaterialPageRoute(builder: (context) => const Chatbotpage()),
               );
             },
           ),
