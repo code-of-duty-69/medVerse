@@ -58,11 +58,32 @@ class _ChatbotPageState extends State<ChatbotPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: const Text('MEDVERSE'),
-        backgroundColor: const Color(0xFF7986CB),
+      appBar:  AppBar(
+        title :Container(
+        height: 96,
+        width: 150,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(12),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withOpacity(0.3), 
+              spreadRadius: 2,
+              blurRadius: 6,
+              offset: const Offset(0, 3),
+            ),
+          ],
+        ),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(12),
+          child: Image.asset(
+            'images/logo.png',
+            fit: BoxFit.cover,
+          ),
+        ),
       ),
+      backgroundColor: const Color.fromARGB(255, 43, 147, 231),
+      toolbarHeight: 110.0,
+    ),
       body: Container(
         //decoration: const BoxDecoration(
         //  image: DecorationImage(

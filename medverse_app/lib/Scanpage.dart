@@ -104,9 +104,32 @@ class _ScanPageState extends State<ScanPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('MEDVERSE'),
-        backgroundColor: const Color.fromARGB(255, 43, 147, 231),
+        title :Container(
+        height: 96,
+        width: 150,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(12),  // Rounded corners
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withOpacity(0.3), // Shadow color
+              spreadRadius: 2,
+              blurRadius: 6,
+              offset: Offset(0, 3), // Shadow position
+            ),
+          ],
+        ),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(12),
+          child: Image.asset(
+            'images/logo.png',
+            fit: BoxFit.cover,
+          ),
+        ),
       ),
+      backgroundColor: const Color.fromARGB(255, 43, 147, 231),
+      toolbarHeight: 110.0,
+    ),
+
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),
         child: Column(
