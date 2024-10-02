@@ -71,7 +71,18 @@ flutter:
     - images/Kauvery/doctors/doc4.png
     - images/Kauvery/doctors/doc5.png
     - images/CNH/doctors/doc1.png
-    - images/CNH/doctors/doc1.png
+    - images/CNH/doctors/doc2.png
+    - images/CNH/doctors/doc3.png
+    - images/CNH/doctors/doc4.png
+    - images/CNH/doctors/doc5.png
+    - images/Billroth/doctors/doc1.png
+    - images/Billroth/doctors/doc2.png
+    - images/Billroth/doctors/doc3.png
+    - images/Billroth/doctors/doc4.png
+    - images/Billroth/doctors/doc5.png
+    - images/Prasanth/doctors/doc1.jpg
+    - images/Prasanth/doctors/doc2.jpg
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

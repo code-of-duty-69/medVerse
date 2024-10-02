@@ -18,32 +18,108 @@ class _MedicaldetailsState extends State<MedicalDetails> {
       'image': 'images/Hlogo1.png',
       'rating': 4.5,
       'about': 'Kauvery hospital launched its first hospital more than two decades ago, the founders of Kauvery Hospital have been determined on creating world class healthcare facilities that shall be affordable. The founding doctors set off on this dream in 1999 with a 30-bed hospital in Trichy, with single-minded focus on offering \'best-in-class healthcare, with a personal touch.',
+      'doctors': [
+        {'image': 'images/Kauvery/doctors/doc1.png'},
+        {'image': 'images/Kauvery/doctors/doc2.png'},
+        {'image': 'images/Kauvery/doctors/doc2.png'},
+        {'image': 'images/Kauvery/doctors/doc2.png'},
+        {'image': 'images/Kauvery/doctors/doc2.png'},
+      ],
     },
     {
-      'name': 'Chennai National Hospital',
-      'image': 'images/Hlogo2.png',
-      'rating': 3.4,
-      'about': 'Chennai National Hospital is an exclusive 120 bed Multi-Speciality Hospital located in the heart of Chennai city. At CNH we strive to deliver the highest standards of healthcare, be it having the finest doctors, cutting edge technology, state-of-the-art infrastructure or nursing with a smile.',
-    },
-    {
-      'name': 'Sir Ivan Stedeford Hospital',
-      'image': 'images/Hlogo4.png',
-      'rating': 3.5,
-      'about': 'The Hospital is situated in an area of 25 acres and was started on 25th February 1966. Initially, the Hospital functioned with an Out-Patient Department. The Hospital has expanded its activity and has grown into a 236 bedded multi speciality hospital.',
-    },
-    {
-      'name': 'Billroth Hospital',
-      'image': 'images/Hlogo5.png',
-      'rating': 4.6,
-      'about': 'Billroth Hospitals was founded by the late Dr. V. Jeganathan, starting with 30 beds and expanding to 350 beds by 2007, including the acquisition of Kalliapa Hospitals. Under Dr. Rajesh\'s leadership, Billroth became a super-specialty hospital, introducing the first dual CT scan in Tamil Nadu and pioneering cancer treatments.',
-    },
-    {
-      'name': 'Prasanth Hospital',
-      'image': 'images/Hlogo3.png',
-      'rating': 4.8,
-      'about': 'When we began operations at Prashanth Fertility Research Centre, we focused exclusively on Infertility. We offered the latest methodologies and technologies to assist childless couples realise their dreams and delivered on that promise and much more.',
-    },
-  ];
+    'name': 'Chennai National Hospital',
+    'image': 'images/Hlogo2.png',
+    'about': 'Chennai National Hospital is an exclusive 120 bed Multi-Speciality Hospital located in the heart of Chennai city. At CNH we strive to deliver the highest standards of healthcare, be it having the finest doctors, cutting edge technology, state-of-the-art infrastructure or nursing with a smile. when we are passionate about healing the lives that have been entrusted to us, nothing is too big or too small to ignore.',
+    'doctors': [
+      {
+        'image': 'images/CNH/doctors/doc1.png',
+      },
+      {
+        'image': 'images/CNH/doctors/doc2.png',
+      },
+      {
+        'image': 'images/CNH/doctors/doc3.png',
+      },
+      {
+        'image': 'images/CNH/doctors/doc4.png',
+      },
+      {
+        'image': 'images/CNH/doctors/doc5.png',
+      }
+
+    ],
+  },
+  {
+    'name': 'Sir Ivan Stedeford Hospital',
+    'image': 'images/Hlogo4.png',
+    'about': 'The Hospital is situated in an area of 25 acres and was started on 25th February 1966. Initially, the Hospital functioned with an Out-Patient Department. The Hospital has expanded its activity and has grown into a 236 bedded multi speciality hospital. Serving around 1600 out patients daily, this hospital provides good quality health care at a highly subsidised rate. This Hospital has several departments and a wide range of facilities to provide effective medical care. Every year, new facilities are being made available, thereby adding to its growth.',
+    'doctors': [
+      {
+        'image': 'images/Prasanth/doctors/doc1.jpg',
+      },
+      {
+        'image': 'images/Prasanth/doctors/doc2.jpg',
+      },
+      {
+        'image': 'images/Prasanth/doctors/doc1.jpg',
+      },
+      {
+        'image': 'images/Prasanth/doctors/doc2.jpg',
+      },
+      {
+        'image': 'images/Prasanth/doctors/doc1.jpg',
+      }
+
+    ],
+  },
+  {
+    'name': 'Billroth Hospital',
+    'image': 'images/Hlogo5.png',
+    'about': 'Billroth Hospitals was founded by the late Dr. V. Jeganathan, starting with 30 beds and expanding to 350 beds by 2007, including the acquisition of Kalliapa Hospitals. Sadly, Dr. Jeganathan passed away in 2007, and his son, Dr. Rajesh Jegannathan, took over at just 26 years old.Under Dr. Rajesh’s leadership, Billroth became a super-specialty hospital, introducing the first dual CT scan in Tamil Nadu and pioneering cancer treatments like Rapid Arc. He also launched philanthropic initiatives, providing free healthcare for the poor, while fostering a positive work environment, which has been key to the hospital\'s success.',
+    'doctors': [
+      {
+        'image': 'images/Billroth/doctors/doc1.png',
+      },
+      {
+        'image': 'images/Billroth/doctors/doc2.png',
+      },
+      {
+        'image': 'images/Billroth/doctors/doc3.png',
+      },
+      {
+        'image': 'images/Billroth/doctors/doc4.png',
+      },
+      {
+        'image': 'images/Billroth/doctors/doc5.png',
+      }
+
+    ],
+  },
+  {
+    'name': ' Prasanth Hospital',
+    'image': 'images/Hlogo3.png',
+    'about': 'When we began operations at Prashanth Fertility Research Centre, we focused exclusively on Infertility. We offered the latest methodologies and technologies to assist childless couples realise their dreams and delivered on that promise and much more. In a short span of time, we widened our scope and started Prashanth Multi Speciality Hospital.To extend our reach further to the southern part of Chennai, we started Prashanth Super Speciality Hospital. This tertiary care hospital offers the finest medical and surgical care across multiple specialities in a world-class environment',
+    'doctors': [
+      {
+        'image': 'images/Prasanth/doctors/doc1.jpg',
+      },
+      {
+        'image': 'images/Prasanth/doctors/doc1.jpg',
+      },
+      {
+        'image': 'images/Prasanth/doctors/doc2.jpg',
+      },
+      {
+        'image': 'images/Prasanth/doctors/doc2.jpg',
+      },
+      {
+        'image': 'images/Prasanth/doctors/doc1.jpg',
+      }
+
+    ],
+  },
+
+];
 
   @override
   Widget build(BuildContext context) {
@@ -77,7 +153,6 @@ class _MedicaldetailsState extends State<MedicalDetails> {
                   hospital['image'],
                   alignment: Alignment.topLeft,
                   fit: BoxFit.contain,
-                  
                 ),
               ),
               Expanded(
@@ -137,7 +212,6 @@ class _MedicaldetailsState extends State<MedicalDetails> {
                     children: [
                       Center(
                         child: Image.asset(
-                          alignment: Alignment.topLeft,
                           hospital['image'],
                           height: 150,
                           fit: BoxFit.contain,
@@ -212,23 +286,28 @@ class _MedicaldetailsState extends State<MedicalDetails> {
                           ),
                         ),
                         const SizedBox(height: 20),
-                        ElevatedButton(
-                          onPressed: () {
-                            // Add functionality for booking appointment
+                        Text(
+                          'Doctors',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: primaryColor,
+                          ),
+                        ),
+                        const SizedBox(height: 10),
+                        GridView.builder(
+                          shrinkWrap: true,
+                          physics: NeverScrollableScrollPhysics(),
+                          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 3,
+                            childAspectRatio: 1,
+                            crossAxisSpacing: 10,
+                            mainAxisSpacing: 10,
+                          ),
+                          itemCount: hospital['doctors'].length,
+                          itemBuilder: (context, index) {
+                            return _buildDoctorCard(hospital['doctors'][index]);
                           },
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: accentColor,
-                            padding: const EdgeInsets.symmetric(vertical: 15),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10),
-                            ),
-                          ),
-                          child: const Center(
-                            child: Text(
-                              'Book Appointment',
-                              style: TextStyle(fontSize: 18),
-                            ),
-                          ),
                         ),
                       ],
                     ),
@@ -236,6 +315,70 @@ class _MedicaldetailsState extends State<MedicalDetails> {
                 ),
               ],
             ),
+          ),
+        );
+      },
+    );
+  }
+
+  Widget _buildDoctorCard(Map<String, dynamic> doctor) {
+    return GestureDetector(
+      onTap: () => _showDoctorDetails(context),
+      child: Card(
+        elevation: 2,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(10),
+          child: Image.asset(
+            doctor['image'],
+            fit: BoxFit.cover,
+          ),
+        ),
+      ),
+    );
+  }
+
+  void _showDoctorDetails(BuildContext context) {
+    showModalBottomSheet(
+      context: context,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      builder: (BuildContext context) {
+        return Container(
+          padding: EdgeInsets.all(20),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(
+                'Doctor Details',
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  color: primaryColor,
+                ),
+              ),
+              SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () {
+                  // Add functionality for booking appointment
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: accentColor,
+                  padding: const EdgeInsets.symmetric(vertical: 15),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                ),
+                child: const Center(
+                  child: Text(
+                    'Book Appointment',
+                    style: TextStyle(fontSize: 18),
+                  ),
+                ),
+              ),
+            ],
           ),
         );
       },
