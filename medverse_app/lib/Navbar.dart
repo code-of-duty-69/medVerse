@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:medverse_app/Reminderpage.dart';
-import 'Scanpage.dart';
 import 'Chatbotpage.dart';
 import 'Appointmentpage.dart';
 
@@ -17,10 +16,8 @@ class Navbar extends StatelessWidget {
             accountName: Text("placeholder"),
             accountEmail: Text("placeholder@gmail.com"),
             decoration: BoxDecoration(
-                color: Color(0x00000000),
-                image: DecorationImage(
-                    image: AssetImage('images/DrawerHeader.jpg'),
-                    fit: BoxFit.cover)),
+                color: Color(0xFF041f30),
+            ),
           ),
           ListTile(
             leading: const Icon(Icons.account_circle),
@@ -69,7 +66,7 @@ class Navbar extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const ScanPage()),
+                MaterialPageRoute(builder: (context) => const ChatbotPage()),
               );
             },
           ),
